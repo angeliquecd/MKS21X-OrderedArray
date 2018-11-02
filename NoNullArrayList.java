@@ -8,11 +8,11 @@ public class NoNullArrayList<T> extends ArrayList<T>{
     super(startingCapacity);
   }
   public boolean add(T value){
-    if (value==null) throw new IllegalArgumentException;
+    if (value==null) throw new IllegalArgumentException("Messed up.");
     super.add(value);
   }
   public void set(int index, T value){
-    if (value==null) throw new IllegalArgumentException;
+    if (value==null) throw new IllegalArgumentException("Messed up");
     super.set(index, value);
   }
 }
